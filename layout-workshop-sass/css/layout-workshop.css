@@ -1,0 +1,677 @@
+/* line 39, layout-workshop.sass */
+html {
+  height: 100%;
+  min-width: 1530px; }
+
+/* line 43, layout-workshop.sass */
+body {
+  background-color: #f9f9fb;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+/* line 50, layout-workshop.sass */
+header {
+  background-color: #212429;
+  min-width: 100%;
+  height: 345px;
+  margin: 0 auto;
+  -webkit-flex: none;
+  /* Safari 6.1+ */
+  -ms-flex: none;
+  /* IE 10 */
+  flex: none; }
+
+/* line 57, layout-workshop.sass */
+.main {
+  -webkit-flex: 1 0 auto;
+  /* Safari 6.1+ */
+  -ms-flex: 1 0 auto;
+  /* IE 10 */
+  flex: 1 0 auto; }
+
+/* line 60, layout-workshop.sass */
+.wrapper {
+  width: 1530px;
+  height: 100%;
+  margin: 0 auto; }
+
+/* line 65, layout-workshop.sass */
+.container {
+  -webkit-flex: none;
+  /* Safari 6.1+ */
+  -ms-flex: none;
+  /* IE 10 */
+  flex: none;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ *x; */ }
+
+/* line 69, layout-workshop.sass */
+.notes-container {
+  max-height: 1700px;
+  margin: 0 -15px;
+  padding-top: 62px;
+  display: -webkit-flex;
+  -webkit-flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  align-items: center; }
+
+/* line 76, layout-workshop.sass */
+footer {
+  background-color: #17191c;
+  height: 412px;
+  margin-top: 40px;
+  -webkit-flex: none;
+  /* Safari 6.1+ */
+  -ms-flex: none;
+  /* IE 10 */
+  flex: none; }
+
+/* --------------------Header's styles---------------- */
+/* line 84, layout-workshop.sass */
+.decoblog {
+  display: inline-block;
+  margin-right: 25%; }
+  /* line 87, layout-workshop.sass */
+  .decoblog > img {
+    vertical-align: -5px; }
+
+/* line 90, layout-workshop.sass */
+.rotate-banner-arrow {
+  color: white;
+  position: relative;
+  margin: -100px -65px 0 0;
+  float: right;
+  text-align: center;
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Safari */
+  transform: rotate(-90deg);
+  /* Standard syntax */ }
+
+/* line 98, layout-workshop.sass */
+.rotate-banner-text {
+  font: bold 14px/24px "Hind", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.1px; }
+
+/* line 103, layout-workshop.sass */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+/* line 111, layout-workshop.sass */
+.rotate-banner-arrow > ul > li {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px 15px 2px;
+  display: inline-block;
+  border: 1px solid white; }
+  /* line 117, layout-workshop.sass */
+  .rotate-banner-arrow > ul > li:active, .rotate-banner-arrow > ul > li:hover {
+    background: #999999; }
+
+/* line 120, layout-workshop.sass */
+.line-left {
+  margin-right: 5px; }
+  /* line 122, layout-workshop.sass */
+  .line-left:after {
+    content: "";
+    position: relative;
+    top: -3.5px;
+    left: -6.5px;
+    width: 25px;
+    height: 2px;
+    background: white;
+    display: inline-block;
+    line-height: normal; }
+
+/* line 133, layout-workshop.sass */
+.rotate180 {
+  -ms-transform: rotate(-180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-180deg);
+  /* Safari */
+  transform: rotate(-180deg);
+  /* Standard syntax */ }
+
+/* line 137, layout-workshop.sass */
+nav {
+  min-width: 1530px;
+  text-align: right; }
+  /* line 140, layout-workshop.sass */
+  nav > a {
+    text-align: center;
+    color: white;
+    line-height: 55px;
+    width: 55px;
+    display: inline-block;
+    border-left: 1px solid #3c3c3c; }
+    /* line 147, layout-workshop.sass */
+    nav > a:active, nav > a:hover {
+      color: #999999; }
+    /* line 149, layout-workshop.sass */
+    nav > a:first-child {
+      width: 60px;
+      float: left;
+      border-right: 1px solid #3c3c3c; }
+    /* line 153, layout-workshop.sass */
+    nav > a:last-child {
+      border-right: 1px solid #3c3c3c; }
+
+/* line 156, layout-workshop.sass */
+.nav-narrow {
+  width: 50px; }
+
+/* line 159, layout-workshop.sass */
+h1 {
+  position: relative;
+  margin: 13px 0 0 99px;
+  color: white;
+  font: bold 40px/50px "Hind", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.44);
+  letter-spacing: 6.8px; }
+
+/* line 168, layout-workshop.sass */
+h5 {
+  position: relative;
+  margin: -355px 0 0 100px;
+  color: white;
+  font: bolder 18px/24px "Hind", sans-serif;
+  letter-spacing: 3.5px; }
+
+/* line 175, layout-workshop.sass */
+.banner {
+  height: 580px; }
+
+/* --------------------Newsletter form's styles---------------- */
+/* line 180, layout-workshop.sass */
+.newsletter {
+  width: 100%;
+  text-align: left;
+  min-height: 100px;
+  margin-top: 290px;
+  font-family: "Hind", sans-serif;
+  text-transform: uppercase;
+  padding: 21px 0 21px 30px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ *x; */ }
+
+/* line 190, layout-workshop.sass */
+.newsletter-input {
+  width: 450px;
+  height: 50px;
+  border: 1px solid #f3f3f3;
+  margin: 0 15px 0 10px;
+  padding: 4px 29px 1px 29px;
+  letter-spacing: 0.6px;
+  font: lighter 16px/28px "Hind", sans-serif;
+  font-stretch: semi-condensed;
+  color: #a9a9a9;
+  vertical-align: -2px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ *x; */ }
+
+/* line 203, layout-workshop.sass */
+.newsletter > button {
+  width: 282px;
+  height: 48px;
+  background: #212121;
+  color: white;
+  margin: -1px 0 0 10px;
+  padding-top: 7px;
+  vertical-align: -3px;
+  display: inline-block;
+  border-style: none;
+  font: 14px/24px "Hind", sans-serif;
+  letter-spacing: 3px; }
+  /* line 215, layout-workshop.sass */
+  .newsletter > button:hover {
+    font: 16px/24px "Hind", sans-serif;
+    vertical-align: -4px; }
+
+/* line 219, layout-workshop.sass */
+.big-spacing-letter {
+  font: bold 20px/28px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1px 40px 0 0; }
+
+/* --------------------Notes's styles---------------- */
+/* line 230, layout-workshop.sass */
+.notes {
+  border: 1px solid #f5f5f7;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 1px 0 rgba(232, 232, 232, 0.21);
+  width: 362px;
+  margin: 15px 0;
+  background: white;
+  position: relative;
+  text-align: center;
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ *x; */ }
+
+/* line 242, layout-workshop.sass */
+.icon {
+  margin-top: 32px; }
+
+/* line 245, layout-workshop.sass */
+.notes:hover, .newsletter-input:hover {
+  box-shadow: 0 0 30px rgba(150, 150, 150, 0.7); }
+
+/* line 248, layout-workshop.sass */
+.wrapper-notes {
+  padding: 30px;
+  background-color: white; }
+
+/* line 252, layout-workshop.sass */
+.small-icon {
+  width: 40px;
+  height: 35px;
+  margin: -17px auto 0 auto;
+  background: #212121;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  line-height: 35px; }
+  /* line 261, layout-workshop.sass */
+  .small-icon > img {
+    vertical-align: -6px;
+    margin-left: 1px; }
+
+/* line 265, layout-workshop.sass */
+h4 {
+  font: 14px/32px "Hind", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #999999;
+  letter-spacing: 1.4px; }
+
+/* line 272, layout-workshop.sass */
+h2 {
+  font: bold 20px/26px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  letter-spacing: 1.4px;
+  margin-bottom: 5px; }
+
+/* line 280, layout-workshop.sass */
+.date {
+  margin-bottom: 5px; }
+
+/* line 285, layout-workshop.sass */
+.wrapper-notes > p {
+  font: 15px/28px "Hind", sans-serif;
+  letter-spacing: 1.35px;
+  color: #464646;
+  margin: 10px auto 5px auto; }
+/* line 290, layout-workshop.sass */
+.wrapper-notes > button {
+  width: 128px;
+  height: 30px;
+  margin: 24px auto 10px auto;
+  background: none;
+  border: solid 1px #d7d7d7;
+  border-top: none;
+  border-bottom: none; }
+  /* line 298, layout-workshop.sass */
+  .wrapper-notes > button p {
+    font: 14px/30px "Hind", sans-serif;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #212121;
+    text-align: center;
+    margin-top: 2px; }
+/* line 305, layout-workshop.sass */
+.wrapper-notes:hover button {
+  border: none; }
+  /* line 306, layout-workshop.sass */
+  .wrapper-notes:hover button:before, .wrapper-notes:hover button:after {
+    content: "";
+    position: absolute;
+    left: 165px;
+    width: 30px;
+    height: 1px;
+    background-color: #d7d7d7; }
+  /* line 315, layout-workshop.sass */
+  .wrapper-notes:hover button:hover p {
+    color: #009ebb; }
+  /* line 317, layout-workshop.sass */
+  .wrapper-notes:hover button:hover:before, .wrapper-notes:hover button:hover:after {
+    left: 150px;
+    width: 60px;
+    background-color: #009ebb; }
+
+/* line 322, layout-workshop.sass */
+.notes > footer {
+  height: 60px;
+  width: 360px;
+  padding-left: 29px;
+  margin: 0;
+  background-color: white;
+  border-top: 1px solid #f5f5f7;
+  line-height: 60px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ *x; */ }
+
+/* line 333, layout-workshop.sass */
+.comments-number {
+  text-align: left;
+  width: 150px;
+  display: inline-block; }
+  /* line 338, layout-workshop.sass */
+  .comments-number > h4 {
+    display: inline-block;
+    vertical-align: -1px;
+    color: #999999; }
+  /* line 342, layout-workshop.sass */
+  .comments-number > a {
+    color: #212121;
+    vertical-align: -1px;
+    margin-right: 7px; }
+  /* line 346, layout-workshop.sass */
+  .comments-number:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+    /* Standard syntax */ }
+
+/* line 349, layout-workshop.sass */
+.comments-social {
+  text-align: right;
+  vertical-align: -1px;
+  width: 145px;
+  display: inline-block; }
+  /* line 354, layout-workshop.sass */
+  .comments-social > a {
+    color: #464646;
+    margin-left: 18px; }
+  /* line 357, layout-workshop.sass */
+  .comments-social a:hover {
+    color: #009ebb; }
+
+/* line 360, layout-workshop.sass */
+.note-img {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../image/note3_back.jpg");
+  background-position: -50px -10px; }
+
+/* line 364, layout-workshop.sass */
+.blank-gray {
+  min-height: 254px;
+  background-color: #f4f4f4; }
+
+/* line 368, layout-workshop.sass */
+.blank {
+  min-height: 513px; }
+
+/* line 371, layout-workshop.sass */
+.dark-theme {
+  background-color: #212429;
+  color: white; }
+  /* line 374, layout-workshop.sass */
+  .dark-theme > p {
+    color: white;
+    font-size: 18px;
+    margin: 5px auto 20px auto;
+    letter-spacing: 1.2px; }
+
+/* line 380, layout-workshop.sass */
+.link > p {
+  margin: 10px auto 25px auto; }
+  /* line 382, layout-workshop.sass */
+  .link > p > a {
+    color: white;
+    vertical-align: -6px;
+    line-height: 20px; }
+    /* line 386, layout-workshop.sass */
+    .link > p > a:hover {
+      color: #999999; }
+
+/* line 389, layout-workshop.sass */
+.white-icon {
+  background: white;
+  color: #212429;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+/* line 394, layout-workshop.sass */
+.video-gray {
+  background-color: #f4f4f4; }
+
+/* line 397, layout-workshop.sass */
+.video-line {
+  background-color: #626262;
+  margin-top: 200px;
+  min-height: 24px;
+  padding: 4px 10px; }
+  /* line 402, layout-workshop.sass */
+  .video-line > ul > li {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: left;
+    color: white;
+    font: 10px/24px "Roboto", sans-serif; }
+
+/* line 409, layout-workshop.sass */
+.stop-line {
+  width: 3px;
+  height: 10px;
+  margin-right: 2px;
+  background-color: white; }
+
+/* line 415, layout-workshop.sass */
+.lines {
+  width: 82px;
+  height: 6px;
+  margin-right: 12px;
+  background-color: white; }
+
+/* line 421, layout-workshop.sass */
+.color {
+  width: 90px;
+  height: 6px;
+  margin-left: 18px;
+  background-color: #ff0d1a; }
+
+/* line 427, layout-workshop.sass */
+.cones {
+  width: 9px;
+  height: 9px;
+  background-color: #626262;
+  margin-left: 25px;
+  box-shadow: -4px -4px 0 -1.8px white, 4px -4px 0 -1.8px white, -4px 4px 0 -1.8px white, 4px 4px 0 -1.8px white; }
+
+/* line 434, layout-workshop.sass */
+.height177 {
+  min-height: 177px; }
+
+/* line 437, layout-workshop.sass */
+.height294 {
+  min-height: 294px; }
+
+/* line 440, layout-workshop.sass */
+.height457 {
+  min-height: 457px; }
+
+/* line 443, layout-workshop.sass */
+.round {
+  width: 135px;
+  height: 135px;
+  border-radius: 135px;
+  background-color: #999999;
+  margin: 15px auto; }
+
+/* --------------------Footer's styles---------------- */
+/* line 452, layout-workshop.sass */
+.footer-container {
+  max-height: 370px;
+  margin: 0 -15px;
+  padding: 52px 0 10px 0;
+  display: -webkit-flex;
+  -webkit-flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
+  -webkit-align-items: center;
+  /* Safari 7.0+ */
+  align-items: center; }
+
+/* line 461, layout-workshop.sass */
+.upper-footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #212429; }
+
+/* line 466, layout-workshop.sass */
+.footer-wrapper {
+  width: 1530px;
+  margin: 0 auto; }
+
+/* line 470, layout-workshop.sass */
+.footer-notes {
+  width: 362px;
+  color: #f9f9fb;
+  -webkit-flex: 1;
+  /* Safari 6.1+ */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1; }
+
+/* line 475, layout-workshop.sass */
+h3 {
+  font: bold 16px/28px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 1.3px; }
+
+/* line 481, layout-workshop.sass */
+.footer-notes > p {
+  font: 15px/28px "Hind", sans-serif;
+  letter-spacing: 1.38px; }
+
+/* line 485, layout-workshop.sass */
+.signature {
+  background-color: #3a3c49;
+  height: 128px;
+  letter-spacing: 1px;
+  text-align: right;
+  padding: 10px 26px;
+  margin-top: 3px; }
+  /* line 492, layout-workshop.sass */
+  .signature > h5 {
+    font: 36px/21px "Mrs Saint Delafield", cursive;
+    -ms-transform: rotate(-8deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-8deg);
+    /* Safari */
+    transform: rotate(-8deg);
+    /* Standard syntax */
+    margin: 0;
+    letter-spacing: 0.4px;
+    padding: 103px 0 0 0; }
+
+/* line 499, layout-workshop.sass */
+.shift {
+  margin-left: 21px; }
+
+/* line 502, layout-workshop.sass */
+.twit-icon {
+  line-height: 18px;
+  text-align: left;
+  left: -21px; }
+
+/* line 507, layout-workshop.sass */
+.twit-msg {
+  margin-bottom: 23px; }
+  /* line 509, layout-workshop.sass */
+  .twit-msg > ul > li {
+    font: 15px/29px "Hind", sans-serif;
+    letter-spacing: 1.4px;
+    margin-bottom: 1px; }
+    /* line 513, layout-workshop.sass */
+    .twit-msg > ul > li:first-child {
+      letter-spacing: 0.8px;
+      margin-bottom: 2px; }
+
+/* line 517, layout-workshop.sass */
+.picture-block {
+  margin-top: 32px; }
+  /* line 519, layout-workshop.sass */
+  .picture-block > li {
+    width: 117px;
+    height: 97px;
+    display: inline-block;
+    background-color: white; }
+
+/* line 525, layout-workshop.sass */
+.comment {
+  height: 105px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #65676a; }
+  /* line 529, layout-workshop.sass */
+  .comment:last-child {
+    border: none; }
+  /* line 531, layout-workshop.sass */
+  .comment > p {
+    font: 14px/25px "Open Sans", sans-serif;
+    letter-spacing: 1.15px;
+    margin-bottom: 6px; }
+
+/* line 536, layout-workshop.sass */
+.down-footer {
+  text-align: center; }
+  /* line 538, layout-workshop.sass */
+  .down-footer > ul > li {
+    font: 14px/10px "Hind", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 17px;
+    padding: 0 15px;
+    color: #9a9a9b;
+    display: inline-block;
+    border-left: 1px solid #9a9a9b; }
+    /* line 547, layout-workshop.sass */
+    .down-footer > ul > li:first-child {
+      border-left: none; }
+
+/*# sourceMappingURL=layout-workshop.css.map */

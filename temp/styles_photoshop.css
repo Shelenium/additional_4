@@ -1,0 +1,203 @@
+.Latest_News {
+  font-size: 18px;
+  font-family: "Hind";
+  color: rgb(255, 255, 255);
+  line-height: 1.333;
+  text-align: left;
+  position: absolute;
+  left: 151.844px;
+  top: 280.003px;
+  z-index: 381;
+}
+.BodyBuilding_best_for_you_health {
+  font-size: 40px;
+  font-family: "Hind";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: left;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.44);
+  position: absolute;
+  left: 149.844px;
+  top: 365.6px;
+  z-index: 382;
+}
+.Signup_to_Newsletter {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: left;
+  position: absolute;
+  left: 82.16px;
+  top: 684.198px;
+  z-index: 363;
+}
+.Your_Name {
+  font-size: 15px;
+  font-family: "Hind";
+  color: rgb(153, 153, 153);
+  text-transform: uppercase;
+  line-height: 1.867;
+  text-align: left;
+  position: absolute;
+  left: 342.132px;
+  top: 673.498px;
+  z-index: 367;
+}
+.Travelling {
+  font-size: 14px;
+  font-family: "Hind";
+  color: rgb(153, 153, 153);
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 190.795px;
+  top: 862.502px;
+  z-index: 281;
+}
+.Travel_besT_Adventure {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: left;
+  position: absolute;
+  left: 87.961px;
+  top: 892px;
+  z-index: 280;
+}
+.January_25__2016 {
+  font-size: 14px;
+  font-family: "Hind";
+  color: rgb(153, 153, 153);
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 169.879px;
+  top: 950.252px;
+  z-index: 282;
+}
+.Lorem_ipsum_doloirs_sit_amet__csatetur_adipisic {
+  font-size: 15px;
+  font-family: "Hind";
+  color: rgb(70, 70, 70);
+  line-height: 1.867;
+  text-align: center;
+  position: absolute;
+  left: 82.787px;
+  top: 998.383px;
+  width: 299px;
+  height: 154px;
+  z-index: 283;
+}
+.Read_More {
+  font-size: 14px;
+  font-family: "Hind";
+  color: rgb(33, 33, 33);
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 183.937px;
+  top: 1165.502px;
+  z-index: 277;
+}
+.No_Comment {
+  font-size: 14px;
+  font-family: "Hind";
+  color: rgb(153, 153, 153);
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 107.938px;
+  top: 1252.502px;
+  z-index: 266;
+}
+.Featured_Article {
+  font-size: 14px;
+  font-family: "Hind";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  -moz-transform: matrix( 0,-1,1,0,0,0);
+  -webkit-transform: matrix( 0,-1,1,0,0,0);
+  -ms-transform: matrix( 0,-1,1,0,0,0);
+  position: absolute;
+  left: 1455.365px;
+  top: 333.002px;
+  z-index: 379;
+}
+.Subscribe_Now {
+  font-size: 14px;
+  font-family: "Hind";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 1342.134px;
+  top: 675.502px;
+  z-index: 368;
+}
+.Nathaliya_Jhone {
+  font-size: 40px;
+  font-family: "Myriad Pro";
+  color: rgb(66, 66, 66);
+  line-height: 0.6;
+  text-align: left;
+  -moz-transform: matrix( 0.89071332367522,-0.13764529365174,0.13764529365174,0.89071332367521,0,0);
+  -webkit-transform: matrix( 0.89071332367522,-0.13764529365174,0.13764529365174,0.89071332367521,0,0);
+  -ms-transform: matrix( 0.89071332367522,-0.13764529365174,0.13764529365174,0.89071332367521,0,0);
+  position: absolute;
+  left: 203.862px;
+  top: 2690.36px;
+  z-index: 25;
+}
+.About_Blog {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb(249, 249, 251);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.75;
+  text-align: left;
+  position: absolute;
+  left: 53.937px;
+  top: 2465.5px;
+  z-index: 22;
+}
+.Lorem_ipsum_dolor_sit_amet__conser_adipisicing_ {
+  font-size: 15px;
+  font-family: "Hind";
+  color: rgb(249, 249, 251);
+  line-height: 1.867;
+  text-align: left;
+  position: absolute;
+  left: 52.937px;
+  top: 2551.383px;
+  width: 359px;
+  height: 42px;
+  z-index: 23;
+}
+._2015_copyright__all_right_reserved_by_awesome_ {
+  font-size: 14px;
+  font-family: "Hind";
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: left;
+  position: absolute;
+  left: 466.937px;
+  top: 2793.502px;
+  z-index: 36;
+}

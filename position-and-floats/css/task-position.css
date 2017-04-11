@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+  font-family: MyriadProRegular;
+}
+
+.common_frame {
+  position: relative;
+  width: 564px;
+  margin: 0 auto;
+}
+
+.maingray {
+  position: absolute;
+  width: 458px;
+  min-height: 670px;
+  padding: 40px 33px;
+  border: 2px solid black;
+}
+
+.gray1 {
+  top: 0;
+  left: 0;
+  background-color: #ebebeb;
+}
+
+.gray2 {
+  top: 20px;
+  left: 20px;
+  background-color: #cccccc;
+}
+
+.gray3 {
+  top: 40px;
+  left: 40px;
+  background-color: #acacac;
+}
+
+.bookmarks {
+  position: absolute;
+  top: 38px;
+  width: 107px;
+  height: 31px;
+  border: 2px solid black;
+  border-radius: 0 10px 10px 0;
+}
+
+.color1 {
+  background-color: #f68e56;
+  right: -83px;
+}
+
+.color2 {
+  background-color: #39b54a;
+  right: -49px;
+}
+
+.color3 {
+  background-color: #00aeef;
+  right: -15px;
+}
+
+h1 {
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: left;
+  font-weight: normal;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.image-up {
+  width: 211px;
+  margin: 0 23px 15px 0;
+}
+
+.image-middle {
+  margin: 0 0 0 5px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.story {
+  font-size: 12px;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: left;
+  margin: 18px 0;
+}
+
+.block > img {
+  width: 195px;
+  height: 89px;
+  margin: 0 0px 10px 0;
+  display: inline-block;
+}
+
+footer {
+  font-size: 9px;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+  margin: 9px 0 0 0;
+}
+
+.img-circle {
+  width: 18px;
+  margin: 3px;
+}
+
+.share {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+  margin: 2px 0;
+}
+
+.social {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 78px;
+  height: 49px;
+  padding: 6px;
+  border: 1px solid black;
+  background-color: #fbaf5d;
+}
+
+#icon1 {
+  background: url("icons/icons18.png") 0 0;
+}
+
+#icon2 {
+  background: url("icons/icons18.png") -18px 0;
+}
+
+#icon3 {
+  background: url("icons/icons18.png") -36px 0;
+}
+
+ul {
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+}
+
+ul > li, ul > li > a {
+  list-style-type: none;
+  display: inline-block;
+  margin: 1px 4px;
+  width: 18px;
+  height: 18px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+

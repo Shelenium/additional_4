@@ -1,0 +1,23 @@
+function prefill(n, v) {
+
+var otvet = [];
+    if (n == 0) { return otvet; }
+    
+    if (n == 1) {
+    otvet[0] = v;
+    return otvet;
+    }
+    if ((n == 'true') || (n == 'false'))
+    {throw TypeError('true is invalid');}
+    
+    if (typeof v == undefined) { v = 'undefined'; }
+    
+    if ((typeof n == 'boolean') || isNaN(n) || !isFinite(n)
+    || (n < 0) || (n%1 != 0))
+     {throw TypeError(n + ' is invalid');}
+     
+
+otvet = new Array(n).fill(v);
+return otvet;
+
+}

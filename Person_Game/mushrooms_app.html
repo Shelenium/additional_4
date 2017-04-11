@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Mushroom Adventure</title>
+    <link href="css/mushrooms_styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/draw_much.png">
+    <meta name="description" content="ROBOTICUTE.Mushroom Adventure">
+    <meta name="keywords" content="Game, Canvas, Html, Css, JavaScript">
+    <meta name="author" content="Elena Shokhan Shelenium">
+  </head>
+
+  <body>
+
+    <div id="header">
+
+      <div id="container-start">
+        <div id="startPage">
+          <h3 class="li-disabled">Game by Shelenium</h3>
+          <h1>ROBOTICUTE<p>Mushroom Adventure</p></h1>
+          <ul>
+            <li id="rules">game rules</li>
+            <li id="choose">choose mission</li>
+            <ul id="select" class="invisible">
+              <li value='0'></li>
+              <li value='1'></li>
+              <li value='2'></li>
+            </ul>
+            <li id="start" class="li-disabled">start game</li>
+          </ul>
+        </div>
+        <div id="rulesPage" class="invisible">
+          
+          <button id="cross" class="cross">x</button>
+
+          <p>ROBOTICUTE</p>
+          <h3>Mushroom Adventure</h3>
+          <h4>Roboticute is a small creature from Robot Planet. Usually he descovers space on his own spaceship. Now he just landed on Mushroom Planet. He received an SOS message from Princesses on that planet months ago. His trip was very long and energy tank is empty. Roboticute knows how to convert mushrooms into the energy. Help him to restore energy level and pass his mission.</h4>
+          <div class="picture">&larr;</div>
+          <div class="picture">&uarr;</div>
+          <div class="picture">&rarr;</div>
+          <div class="picture">&darr;</div>
+          <div class="picture">P</div>
+          <h4><strong>Roboticute: </strong>Use keyboard's arrows <strong>UP, DOWN, LEFT, RIGHT</strong>  to move Roboticute.</br> 
+            Use key <strong>P</strong> or button <strong>Pause Game</strong> to pause or resume game.</h4>
+          <div class="picture"><img class="icon" src="images/draw_bor.jpg"></div>
+          <div class="picture"><img class="icon" src="images/draw_much.jpg"></div>
+          <h4><strong>Mushrooms: </strong> There are two types of mushrooms at the Planet: Boroviks and Amanitas. They are growing and (if nobody picks it up) dying. Roboticute can pick up mushrooms to raise an energy level. Borovik will increase green energy, Amanita &#8211; red energy. Roboticute uses 1 red and 1 green energy unit periodically. </h4>
+          <div class="picture"><img class="icon" src="images/draw_frog.jpg"></div>
+          <h4><strong>Frogs: </strong> Collision with any frog will convert it to Princess. </br><strong>Be careful</strong> &#8211; Princesses are very beautiful and <strong>slowly increase level of green energy </strong>, but they <strong>consume a lot of red energy</strong>. If number of Princesses more than 4 &#8211; Roboticute begin to use one more green energy unit (or even two units). You can consider red energy as money, green energy as food. No money &#8211; no Princesses. They will leave you when red energy level becomes zero. </h4>
+
+          <!--   <div class = "whitePage"></div> -->
+
+
+        </div>
+      </div>
+
+      <div id="container-game">
+        <div id="gamePage" class="invisible">
+          <h2></h2>
+          <button id="restart-mission" class="game-button">Restart mission</button>
+          <button id="choose-mission" class="game-button">Choose mission</button>
+          <button id="no-sound" class="game-button">Mute</button>
+          <button id="pause-game" class="game-button">Pause game</button>
+
+          <div id="canvasDiv"></div>
+          <audio id="soundEffBor" src="sounds/takeMuch.mp3" class="invisible"></audio>
+          <audio id="soundEffMuch" src="sounds/takeMuch.mp3" class="invisible"></audio>
+          <audio id="soundEffGirlsGoAway" src="sounds/girls_go_away.mp3" class="invisible"></audio>
+          <audio id="soundEffGirls" src="sounds/girls.mp3" class="invisible"></audio>
+          <audio id="soundEffRobo" src="sounds/cartoon-computer_ds.mp3" class="invisible"></audio>
+          <audio id="soundEffWin" src="sounds/well_done.mp3" class="invisible"></audio>
+          <audio id="soundEffNoMoney" src="sounds/no_money.mp3" class="invisible"></audio>
+
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/mushrooms_app.js"></script>
+
+  </body>
+
+</html>
+

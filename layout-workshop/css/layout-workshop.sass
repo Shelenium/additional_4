@@ -1,0 +1,547 @@
+$font-head: 'Montserrat', sans-serif
+$font-text: 'Hind', sans-serif
+
+  =transform($transform, $param)
+  -ms-transform: $transform($param))
+  /* IE 9
+  -webkit-transform: $transform($param))
+  /* Safari
+  transform: $transform($param))
+  /* Standard syntax
+
+=flex($flex)
+  -webkit-flex: $flex
+  /* Safari 6.1+
+  -ms-flex: $flex
+  /* IE 10
+  flex: $flex
+
+=sizing($sizing)
+  -webkit-box-sizing: $sizing
+  /* Safari/Chrome, other WebKit
+  -moz-box-sizing: $sizing
+  /* Firefox, other Gecko
+  box-sizing: $sizing
+  /* Opera/IE 8+ *x;
+
+=flex-flow($flex-flow)
+  display: -webkit-flex
+  -webkit-flex-flow: $flex-flow
+  display: flex
+  flex-flow: $flex-flow
+
+
+html
+  height: 100%
+  min-width: 1530px
+
+body
+  background-color: #f9f9fb
+  height: 100%
+  width: 100%
+  display: flex
+  flex-direction: column
+
+header
+  background-color: #212429
+  min-width: 100%
+  height: 345px
+  margin: 0 auto
+  +flex(none)
+
+.main
+ +flex(1 0 auto)
+
+.wrapper
+  width: 1530px
+  height: 100%
+  margin: 0 auto
+
+.container 
+  +flex(none)
+  +sizing(border-box)
+
+.notes-container
+  max-height: 1700px
+  margin: 0 -15px
+  padding-top: 62px
+  +flex-flow(column wrap)
+  
+
+  -webkit-align-items: center
+  /* Safari 7.0+
+  align-items: center
+
+footer
+  background-color: #17191c
+  height: 412px
+  margin-top: 40px
+  +flex(none)
+
+/* --------------------Header's styles----------------
+
+.decoblog
+  display: inline-block
+  margin-right: 25%
+  > img
+    vertical-align: -5px
+
+.rotate-banner-arrow
+  color: white
+  position: relative
+  margin: -100px -65px 0 0
+  float: right
+  text-align: center
+  +transform(rotate,-90deg)
+
+.rotate-banner-text
+  font: bold 14px/24px $font-text
+  text-transform: uppercase
+  letter-spacing: 3.1px
+
+.clearfix:after
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+
+.rotate-banner-arrow > ul > li
+  width: 6px
+  height: 6px
+  margin: 0 3px 15px 2px
+  display: inline-block
+  border: 1px solid white
+  &:active, &:hover
+    background: #999999
+
+.line-left
+  margin-right: 5px
+  &:after
+    content: ""
+    position: relative
+    top: -3.5px
+    left: -6.5px
+    width: 25px
+    height: 2px
+    background: white
+    display: inline-block
+    line-height: normal
+
+.rotate180
++transform(rotate,-180deg)
+
+
+nav
+  min-width: 1530px
+  text-align: right
+  > a
+    text-align: center
+    color: white
+    line-height: 55px
+    width: 55px
+    display: inline-block
+    border-left: 1px solid #3c3c3c
+    &:active, &:hover
+      color: #999999
+    &:first-child
+      width: 60px
+      float: left
+      border-right: 1px solid #3c3c3c
+    &:last-child
+      border-right: 1px solid #3c3c3c
+
+.nav-narrow
+  width: 50px
+
+h1
+  position: relative
+  margin: 13px 0 0 99px
+  color: white
+  font: bold 40px/50px $font-text
+  text-transform: uppercase
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.44)
+  letter-spacing: 6.8px
+
+h5
+  position: relative
+  margin: -355px 0 0 100px
+  color: white
+  font: bolder 18px/24px $font-text
+  letter-spacing: 3.5px
+
+.banner
+  height: 580px
+
+/* --------------------Newsletter form's styles----------------
+
+.newsletter
+  width: 100%
+  text-align: left
+  min-height: 100px
+  margin-top: 290px
+  font-family: $font-text
+  text-transform: uppercase
+  padding: 21px 0 21px 30px
+  +sizing(border-box)
+
+.newsletter-input
+  width: 450px
+  height: 50px
+  border: 1px solid #f3f3f3
+  margin: 0 15px 0 10px
+  padding: 4px 29px 1px 29px
+  letter-spacing: 0.6px
+  font: lighter 16px/28px $font-text
+  font-stretch: semi-condensed
+  color: #a9a9a9
+  vertical-align: -2px
+  +sizing(border-box)
+
+.newsletter > button
+  width: 282px
+  height: 48px
+  background: #212121
+  color: white
+  margin: -1px 0 0 10px
+  padding-top: 7px
+  vertical-align: -3px
+  display: inline-block
+  border-style: none
+  font: 14px/24px $font-text
+  letter-spacing: 3px
+  &:hover
+    font: 16px/24px $font-text
+    vertical-align: -4px
+
+.big-spacing-letter
+  font: bold 20px/28px $font-head
+  text-transform: uppercase
+  letter-spacing: 4px
+  text-align: left
+  display: inline-block
+  vertical-align: middle
+  margin: 1px 40px 0 0
+
+/* --------------------Notes's styles----------------
+
+.notes
+  border: 1px solid #f5f5f7
+  background-color: rgb(244, 244, 244)
+  box-shadow: 0 0 1px 0 rgba(232, 232, 232, 0.21)
+  width: 362px
+  margin: 15px 0
+  background: white
+  position: relative
+  text-align: center
+  +flex(1)
+  +sizing(border-box)
+
+.icon
+  margin-top: 32px
+
+.notes:hover, .newsletter-input:hover
+  box-shadow: 0 0 30px rgba(150, 150, 150, 0.7)
+
+.wrapper-notes
+  padding: 30px
+  background-color: white
+
+.small-icon
+  width: 40px
+  height: 35px
+  margin: -17px auto 0 auto
+  background: #212121
+  text-align: center
+  color: white
+  vertical-align: middle
+  line-height: 35px
+  > img
+    vertical-align: -6px
+    margin-left: 1px
+
+h4
+  font: 14px/32px $font-text
+  text-transform: uppercase
+  text-align: center
+  color: #999999
+  letter-spacing: 1.4px
+
+h2
+  font: bold 20px/26px $font-head
+  text-transform: uppercase
+  text-align: center
+  color: #212121
+  letter-spacing: 1.4px
+  margin-bottom: 5px
+
+.date
+  margin-bottom: 5px
+
+.wrapper-notes
+  >
+    p
+      font: 15px/28px $font-text
+      letter-spacing: 1.35px
+      color: #464646
+      margin: 10px auto 5px auto
+    button
+      width: 128px
+      height: 30px
+      margin: 24px auto 10px auto
+      background: none
+      border: solid 1px #d7d7d7
+      border-top: none
+      border-bottom: none
+      p
+        font: 14px/30px $font-text
+        letter-spacing: 2.5px
+        text-transform: uppercase
+        color: #212121
+        text-align: center
+        margin-top: 2px
+  &:hover button
+    &:before, &:after
+      content: ""
+      position: absolute
+      left: 165px
+      width: 30px
+      height: 1px
+      background-color: #d7d7d7
+    border: none
+    &:hover
+      p
+        color: #009ebb
+      &:before, &:after
+        left: 150px
+        width: 60px
+        background-color: #009ebb
+
+.notes > footer
+  height: 60px
+  width: 360px
+  padding-left: 29px
+  margin: 0
+  background-color: white
+  border-top: 1px solid #f5f5f7
+  line-height: 60px
+  text-align: left
+  +sizing(border-box)
+
+.comments-number
+  text-align: left
+  width: 150px
+  display: inline-block
+  >
+    h4
+      display: inline-block
+      vertical-align: -1px
+      color: #999999
+    a
+      color: #212121
+      vertical-align: -1px
+      margin-right: 7px
+  &:hover
+    +transform(scale,1.1)
+
+.comments-social
+  text-align: right
+  vertical-align: -1px
+  width: 145px
+  display: inline-block
+  > a
+    color: #464646
+    margin-left: 18px
+  a:hover
+    color: #009ebb
+
+.note-img
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../image/note3_back.jpg")
+  background-position: -50px -10px
+
+.blank-gray
+  min-height: 254px
+  background-color: #f4f4f4
+
+.blank
+  min-height: 513px
+
+.dark-theme
+  background-color: #212429
+  color: white
+  > p
+    color: white
+    font-size: 18px
+    margin: 5px auto 20px auto
+    letter-spacing: 1.2px
+
+.link > p
+  margin: 10px auto 25px auto
+  > a
+    color: white
+    vertical-align: -6px
+    line-height: 20px
+    &:hover
+      color: #999999
+
+.white-icon
+  background: white
+  color: #212429
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+.video-gray
+  background-color: #f4f4f4
+
+.video-line
+  background-color: #626262
+  margin-top: 200px
+  min-height: 24px
+  padding: 4px 10px
+  > ul > li
+    vertical-align: middle
+    display: inline-block
+    text-align: left
+    color: white
+    font: 10px/24px 'Roboto', sans-serif
+
+.stop-line
+  width: 3px
+  height: 10px
+  margin-right: 2px
+  background-color: white
+
+.lines
+  width: 82px
+  height: 6px
+  margin-right: 12px
+  background-color: white
+
+.color
+  width: 90px
+  height: 6px
+  margin-left: 18px
+  background-color: #ff0d1a
+
+.cones
+  width: 9px
+  height: 9px
+  background-color: #626262
+  margin-left: 25px
+  box-shadow: -4px -4px 0 -1.8px white, 4px -4px 0 -1.8px white, -4px 4px 0 -1.8px white, 4px 4px 0 -1.8px white
+
+.height177
+  min-height: 177px
+
+.height294
+  min-height: 294px
+
+.height457
+  min-height: 457px
+
+.round
+  width: 135px
+  height: 135px
+  border-radius: 135px
+  background-color: #999999
+  margin: 15px auto
+
+/* --------------------Footer's styles----------------
+
+.footer-container
+  max-height: 370px
+  margin: 0 -15px
+  padding: 52px 0 10px 0
+  +flex-flow(column wrap)
+  -webkit-align-items: center
+  /* Safari 7.0+
+  align-items: center
+
+.upper-footer
+  width: 100%
+  margin: 0 auto
+  background-color: #212429
+
+.footer-wrapper
+  width: 1530px
+  margin: 0 auto
+
+.footer-notes
+  width: 362px
+  color: #f9f9fb
+  +flex(1)
+
+h3
+  font: bold 16px/28px $font-head
+  text-transform: uppercase
+  margin-bottom: 25px
+  letter-spacing: 1.3px
+
+.footer-notes > p
+  font: 15px/28px $font-text
+  letter-spacing: 1.38px
+
+.signature
+  background-color: #3a3c49
+  height: 128px
+  letter-spacing: 1px
+  text-align: right
+  padding: 10px 26px
+  margin-top: 3px
+  > h5
+    font: 36px/21px 'Mrs Saint Delafield', cursive
+    +transform(rotate,-8deg)
+    margin: 0
+    letter-spacing: 0.4px
+    padding: 103px 0 0 0
+
+.shift
+  margin-left: 21px
+
+.twit-icon
+  line-height: 18px
+  text-align: left
+  left: -21px
+
+.twit-msg
+  margin-bottom: 23px
+  > ul > li
+    font: 15px/29px $font-text
+    letter-spacing: 1.4px
+    margin-bottom: 1px
+    &:first-child
+      letter-spacing: 0.8px
+      margin-bottom: 2px
+
+.picture-block
+  margin-top: 32px
+  > li
+    width: 117px
+    height: 97px
+    display: inline-block
+    background-color: white
+
+.comment
+  height: 105px
+  margin-bottom: 22px
+  border-bottom: 1px solid #65676a
+  &:last-child
+    border: none
+  > p
+    font: 14px/25px 'Open Sans', sans-serif
+    letter-spacing: 1.15px
+    margin-bottom: 6px
+
+.down-footer
+  text-align: center
+  > ul > li
+    font: 14px/10px $font-text
+    text-transform: uppercase
+    letter-spacing: 1.2px
+    margin-top: 17px
+    padding: 0 15px
+    color: #9a9a9b
+    display: inline-block
+    border-left: 1px solid #9a9a9b
+    &:first-child
+      border-left: none
